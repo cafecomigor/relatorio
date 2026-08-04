@@ -103,6 +103,31 @@ a{color:inherit;}
 .btn.ghost{border-color:var(--hairline); color:var(--ink-2);}
 .btn.ghost:hover{border-color:var(--gold); color:var(--gold);}
 
+/* ---------- CAMPAIGN BANNER ---------- */
+.campaign-banner{
+  border-top:3px solid var(--gold);
+  background:linear-gradient(160deg, #241a10, var(--surface) 65%);
+  padding:64px 0 40px;
+}
+.campaign-banner .c-eyebrow{
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;
+  margin-bottom:20px;
+}
+.campaign-title{
+  font-family:"Fraunces",serif;
+  font-size:clamp(24px,3.6vw,36px);
+  font-weight:600;
+  margin:0 0 12px;
+  color:var(--ink);
+}
+.campaign-subtitle{
+  font-size:15.5px;
+  color:var(--ink-2);
+  max-width:640px;
+  margin:0 0 24px;
+  line-height:1.65;
+}
+
 /* ---------- KPI ---------- */
 .kpi-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:18px; margin-bottom:16px;}
 .kpi{
