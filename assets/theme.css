@@ -223,6 +223,43 @@ footer{
 footer .fine{font-size:12px; color:var(--ink-muted); border-top:1px solid var(--hairline-2); padding-top:24px; margin-top:16px;}
 footer .btn-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:8px;}
 
+/* ---------- GATE (acesso restrito) ---------- */
+.gate-overlay{
+  position:fixed; inset:0; z-index:999;
+  background:var(--surface);
+  display:none;
+  align-items:center; justify-content:center;
+  padding:24px;
+}
+.gate-card{
+  max-width:360px; width:100%;
+  background:var(--surface-card);
+  border:1px solid var(--hairline);
+  border-radius:18px;
+  padding:40px 32px;
+  text-align:center;
+}
+.gate-card .kicker{justify-content:center; display:flex; margin:0 0 16px;}
+.gate-card h2{font-family:"Fraunces",serif; font-size:22px; margin:0 0 10px; color:var(--ink);}
+.gate-card p.gate-desc{font-size:14px; color:var(--ink-muted); margin:0 0 24px; line-height:1.6;}
+.gate-card input{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--hairline);
+  border-radius:10px;
+  padding:14px 16px;
+  color:var(--ink);
+  font-size:16px;
+  text-align:center;
+  letter-spacing:0.15em;
+  margin-bottom:16px;
+  font-family:"Inter",sans-serif;
+  box-sizing:border-box;
+}
+.gate-card input:focus{outline:none; border-color:var(--gold);}
+.gate-card .gate-error{display:none; color:var(--rust); font-size:13px; margin:-8px 0 16px;}
+.gate-card button{width:100%; justify-content:center; cursor:pointer;}
+
 /* ---------- LISTA DE RELATÓRIOS (home) ---------- */
 .report-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px;}
 .report-card{

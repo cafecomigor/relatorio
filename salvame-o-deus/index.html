@@ -12,6 +12,22 @@
 </head>
 <body>
 
+<div class="gate-overlay" id="gate-overlay">
+  <div class="gate-card">
+    <p class="kicker">Acesso restrito</p>
+    <h2>Relatório confidencial</h2>
+    <p class="gate-desc">Digite o código de acesso que você recebeu para ver este relatório.</p>
+    <form id="gate-form">
+      <input type="text" id="gate-input" inputmode="numeric" autocomplete="off" placeholder="Código de acesso">
+      <p class="gate-error" id="gate-error">Código incorreto. Tente novamente.</p>
+      <button type="submit" class="btn primary">Entrar</button>
+    </form>
+  </div>
+</div>
+<script>window.GATE_HASH = "dcb13cb8272b156d53b6a0861e5862eb8e6778058a83c0eb339983a2b92f27fa";</script>
+
+<div id="report-content" style="display:none">
+
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow-row">
@@ -226,5 +242,8 @@
     document.querySelectorAll('.b-fill').forEach(function(el){ el.style.width = el.dataset.w; });
   }
 </script>
+
+</div>
+<script src="../assets/gate.js"></script>
 </body>
 </html>
