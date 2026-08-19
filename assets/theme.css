@@ -225,19 +225,27 @@ footer .btn-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; 
 
 /* ---------- GATE (acesso restrito) ---------- */
 .gate-overlay{
-  position:fixed; inset:0; z-index:999;
+  position:fixed;
+  top:0; left:0; right:0; bottom:0;
+  width:100%; height:100%;
+  z-index:999;
   background:var(--surface);
   display:none;
   align-items:center; justify-content:center;
+  text-align:center;
   padding:24px;
+  box-sizing:border-box;
+  overflow-y:auto;
 }
 .gate-card{
   max-width:360px; width:100%;
+  margin:0 auto;
   background:var(--surface-card);
   border:1px solid var(--hairline);
   border-radius:18px;
   padding:40px 32px;
   text-align:center;
+  box-sizing:border-box;
 }
 .gate-card .kicker{justify-content:center; display:flex; margin:0 0 16px;}
 .gate-card h2{font-family:"Fraunces",serif; font-size:22px; margin:0 0 10px; color:var(--ink);}
